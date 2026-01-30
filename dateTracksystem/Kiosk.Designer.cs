@@ -37,30 +37,33 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(577, 729);
+            this.panel1.Size = new System.Drawing.Size(720, 842);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(81, 611);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(120, 672);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 54);
+            this.label1.Size = new System.Drawing.Size(473, 75);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Click Here to Start";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "Click Here to Start\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Kiosk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 732);
+            this.ClientSize = new System.Drawing.Size(720, 842);
             this.Controls.Add(this.panel1);
             this.Name = "Kiosk";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kiosk";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

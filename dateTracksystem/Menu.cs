@@ -16,8 +16,26 @@ namespace dateTracksystem
         {
             InitializeComponent();
         }
+        Main main = new Main();
 
         private void label2_Click(object sender, EventArgs e)
+        {
+            main.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            main.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
